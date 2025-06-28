@@ -1,0 +1,31 @@
+@import './../../../styles.scss';
+
+.footer-area{
+    @include dFlex($fd: row, $jc: space-between);
+    width: 100vw;
+    background-color: $shared_grey;
+    width: 100%;
+    .logo-area{
+        margin: 12px 12px 12px 12px;
+
+        .logo{
+            width: 88px;
+        }
+    }
+
+    .link-area{
+        @include dFlex($fd: row);
+        margin: 12px 12px 12px 12px;
+
+        .footer-link{
+            text-decoration: none;
+            color: white;
+            margin: 0px 8px 0px 8px;
+        }
+
+        .link-seperator{
+            height: 18px;
+            border: solid 1px white;
+        }
+    }
+}

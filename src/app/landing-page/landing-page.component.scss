@@ -1,0 +1,129 @@
+@import './../../styles.scss';
+
+h2{
+    margin: 58px 0px 58px 0px;
+}
+
+.landing-content{
+    @include dFlex($fd: row, $ai: center);
+    height: 100vh;
+
+    .seperator{
+        height: 75%;
+        border: solid 1px white;
+    }
+}
+
+.lore-area{
+    width: 100%;
+    height: 100%;
+    margin: 0px 12px 0px 12px;
+    @include dFlex($jc: normal);
+
+    .lore-content{
+        @include dFlex( $ai: flex-start);
+
+        .img-area{
+            @include dFlex( $fd: row, $jc: space-between);
+            width: 100%;
+            background-color: $shared_grey;
+            border-radius: 10px;
+
+            .lore-img{
+                width: 148px;
+                margin: 0px 24px 0px 0px;
+            }
+        }
+
+        .btn-area{
+            @include dFlex();
+            width: 100%;
+
+            .btn{
+                background-color: $shared_grey;
+                padding: 12px 12px 12px 12px;
+                border: solid 1px $shared_grey;
+                border-radius: 10px;
+                box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+                -webkit-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+                -moz-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+                transition: 0.5s ease;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: translate3d(0, 15px, 0);
+                }
+            }
+        }
+    }
+}
+
+.ticker-area{
+    @include dFlex($jc: normal);
+    height: 100%;
+    width: 100%;
+}
+
+.ticker-content{
+    @include dFlex();
+    width: 100%;
+        
+    .ticker-screen{
+        background-color: $shared_grey;
+        height: 500px;
+        width: 75%;
+        margin: 48px 0px 0px 0px;
+        border-radius: 15px;
+    }
+}
+
+.builder-area{
+    @include dFlex($jc: normal);
+    height: 100%;
+    width: 100%;
+}
+
+.builder-content{
+    @include dFlex();
+    width: 100%;
+
+    .army-builder{
+        @include dFlex();
+        width: 100%;
+        margin: 24px 0px 0px 0px;
+    }
+}
+
+.build-btn{
+    @include dFlex();
+    border: solid 1px $shared_grey;
+    padding: 18px 18px 18px 18px;
+    border-radius: 10px;
+    background-color: $shared_grey;
+    box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+    -webkit-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+    -moz-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+    transition: 0.5s ease;
+
+    &:hover{
+        cursor: pointer;
+        transform: translate3d(0, 15px, 0);
+    }
+
+    h3{
+        margin: 0;
+        color: white;
+        text-decoration: none;
+    }
+
+    .build-img-area{
+        @include dFlex();
+        width: 100%;
+
+        .build-img{
+            width: 188px;
+            height: 188px;
+            border-radius: 10px;
+        }
+    }
+}
