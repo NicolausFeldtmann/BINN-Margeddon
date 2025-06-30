@@ -16,11 +16,11 @@
         padding: 24px 24px 24px 24px;
 
         .lore-img-area{
+            @include dFlex($fd: row,$jc:space-around);
             width: 100%;
 
             .lore-img{
                 width: 280px;
-                height: 280px;
                 border-radius: 10px;
                 box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
                 -webkit-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);

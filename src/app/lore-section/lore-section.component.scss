@@ -17,6 +17,8 @@
 
     .about{
         @include dFlex();
+        color: white;
+        text-decoration: none;
         background-color: $ligth_grey;
         width: 75%;
         border-radius: 10px;
