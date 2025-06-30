@@ -5,6 +5,7 @@ body{
 }
 
 $shared_grey: rgb(45, 45, 45);
+$ligth_grey: rgb(71, 71, 71);
 
 @mixin dFlex($df: flex, $fd: column, $jc: center, $ai: center) {
     display: $df;
@@ -12,3 +13,4 @@ $shared_grey: rgb(45, 45, 45);
     justify-content: $jc;
     align-items: $ai;
 }
+

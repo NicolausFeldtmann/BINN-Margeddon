@@ -1,0 +1,47 @@
+@import './styles.scss';
+
+.lore-content{
+    @include dFlex();
+    width: 100vw;
+
+    .lore-entry{
+        @include dFlex();
+        width: 70%;
+        background-color: $shared_grey;
+        margin: 48px 0px 48px 0px;
+        border-radius: 10px;
+        box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+        -webkit-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+        -moz-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+        padding: 24px 24px 24px 24px;
+
+        .lore-img-area{
+            width: 100%;
+
+            .lore-img{
+                width: 280px;
+                height: 280px;
+                border-radius: 10px;
+                box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+                -webkit-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+                -moz-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+            }
+        }
+
+        .txt{
+            margin: 24px 0px 24px 0px;
+            background-color: $ligth_grey;
+            border-radius: 10px;
+            border-radius: 10px;
+            padding: 24px 24px 24px 24px;
+
+            h2{
+                font-size: 36px;
+            }
+
+            p{
+                font-size: 24px;
+            }
+        }
+    }
+}

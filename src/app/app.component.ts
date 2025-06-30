@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { ArmySectionComponent } from './army-section/army-section.component';
+import { ArmySectionComponent } from './army/army-section/army-section.component';
 
 @Component({
   selector: 'app-root',

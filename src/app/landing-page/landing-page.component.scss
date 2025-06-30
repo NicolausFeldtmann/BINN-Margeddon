@@ -23,6 +23,11 @@ h2{
     .lore-content{
         @include dFlex( $ai: flex-start);
 
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
         .img-area{
             @include dFlex( $fd: row, $jc: space-between);
             width: 100%;
