@@ -1,0 +1,30 @@
+@import './../../../styles.scss';
+
+.choose-content{
+    @include dFlex();
+    width: 100vw;
+}
+
+.fraktions-area{
+    @include dFlex($fd: row);
+
+    .fraktion{
+        @include dFlex();
+
+        .choose-img-area{
+            @include dFlex();
+
+            .choose-img{
+                width: 500px;
+                height: 500px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .seperator{
+        border: solid 1px white;
+        margin: 0px 24px 0px 24px;
+        height: 100vh;
+    }  
+}

@@ -1,0 +1,46 @@
+@import './../../../../../styles.scss';
+
+.entry-box{
+    @include dFlex();
+    border: solid 1px gray;
+    width: 50%;
+    margin: 24px 12px 24px 12px;
+
+    .box-header{
+        @include dFlex($fd: row);
+        background-color: $shared_grey;
+        width: 100%;
+
+        h2{
+            font-size: 36px;
+        }
+
+        h4{
+            font-size: 24px
+        }
+    }
+
+    .box-content{
+        @include dFlex();
+
+        h3{
+            font-size: 28px
+        }
+
+        .box-options{
+            @include dFlex();
+
+            p{
+                @include dFlex();
+                background-color: $shared_grey;
+                border: solid 1px gray;
+                font-size: 28px;
+                padding: 12px 12px 12px 12px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<div class="chaos-content">
+
+    <h1>World eaters</h1>
+
+    <p>
+        Below you will find a list of the operatives that make up a World Eater Kill Team, including,
+        where relevant, any weapon specified for that operative.
+    </p>
+
+    <div class="etry-section">
+        <div class="entry">
+            <h1 class="temp-h1">LEADER</h1>
+            <h2>Select LEADER operativ from the following list:</h2>
+            <app-template *ngFor="let item of chaoslistdata.leaderList" [leaderList]="item"></app-template>
+        </div>
+        <div class="entry">
+            <h1 class="temp-h1">WOLRD EATERS</h1>
+            <h2>Select WORLD EATERS operatives from the following list:</h2>
+            <app-template *ngFor="let item of chaoslistdata.opList" [leaderList]="item"></app-template>
+        </div>
+        <div class="entry">
+            <h1 class="temp-h1">SUPPORT</h1>
+            <h2>Select SUPPORT operatives from the following list</h2>
+            <app-template *ngFor="let item of chaoslistdata.supportList" [leaderList]="item"></app-template>
+        </div>
+    </div>
+</div>
