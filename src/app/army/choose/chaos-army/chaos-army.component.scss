@@ -1,0 +1,21 @@
+@import './../../../../styles.scss';
+
+.chaos-content{
+    @include dFlex();
+    width: 100vw;
+
+    .entry-section{
+        @include dFlex();
+        width: 100%;
+
+        .entry{
+            @include dFlex();
+            width: 100%;
+
+            app-template{
+                @include dFlex();
+                width: 100%;
+            }
+        }
+    }
+}

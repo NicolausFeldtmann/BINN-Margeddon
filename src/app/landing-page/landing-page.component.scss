@@ -12,6 +12,55 @@ h2{
         height: 75%;
         border: solid 1px white;
     }
+
+    .start-screen{
+        @include dFlex();
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        z-index: 15;
+        backdrop-filter: blur(3px);
+
+
+        .input-box{
+            @include dFlex($jc: normal);
+            width: 75%;
+            height: 45%;
+            background-color: $ligth_grey;
+            border: solid 1px  gray;
+            border-radius: 10px;
+            box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+            -webkit-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+            -moz-box-shadow: -10px 10px 13px -1px rgba(0,0,0,0.57);
+            transition: 0.5s ease;
+
+            .input-h3{
+                @include dFlex();
+                margin: 0px 0px 24px 0px;
+                height: 88px;
+                font-size: 48px;
+                width: 100%;
+                background-color: $shared_grey;
+            }
+
+            .input-h4{
+                font-size: 24px;
+            }
+
+            .input-area{
+                @include dFlex();
+
+                input{
+                    font-size: 24px;
+                }
+
+                button{
+                    font-size: 24px;
+                    margin: 24px 0px 0px 0px;
+                }
+            }
+        }
+    }
 }
 
 .lore-area{

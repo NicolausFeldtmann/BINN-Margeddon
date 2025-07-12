@@ -37,7 +37,6 @@ export class ChaoslistdataService {
             des: "with one of the following options",
             op1: "Double-handed chainaxe",
             op2: "Double-handed chainsword",
-            op3: "",
         },
         {
             name: "Gunner",
@@ -53,7 +52,6 @@ export class ChaoslistdataService {
             des: "with one of the following options",
             op1: "Bolt pistol and chainaxe",
             op2: "Bolt pistol and chainsword",
-            op3: "",
         },
         {
             name: "Warrior",
@@ -61,7 +59,6 @@ export class ChaoslistdataService {
             des: "WARRIOR can take each operativ once",
             op1: "Bolt pistol and chainaxe",
             op2: "Bolt pistol and chainsword",
-            op3: "",
         }
     ]
 
@@ -78,7 +75,6 @@ export class ChaoslistdataService {
             type: "Support",
             des: "Only available for the EIGHTBOUND APOSTEL",
             op1: "Hellblade",
-            op2: "",
         },
         {
             name: "Heavy gunner",
